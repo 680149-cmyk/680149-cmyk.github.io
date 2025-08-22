@@ -2,74 +2,59 @@
 <html lang="th">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ขายหญ้าพันธุ์วัวชน - บ้านป่าพะยอม</title>
-  <style>
-    body {
-      font-family: 'Tahoma', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #e8f5e9;
-      color: #2e7d32;
-    }
-
-    header {
-      background-color: #1b5e20;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-
-    .container {
-      padding: 30px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    h2 {
-      color: #388e3c;
-    }
-
-    p {
-      font-size: 18px;
-    }
-
-    .product {
-      background-color: #ffffff;
-      border: 1px solid #c8e6c9;
-      padding: 20px;
-      border-radius: 8px;
-      margin-top: 20px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    button {
-      background-color: #43a047;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      font-size: 16px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #388e3c;
-    }
-
-    #order-message {
-      margin-top: 15px;
-      font-weight: bold;
-      color: #1b5e20;
-    }
-
-    @media (max-width: 600px) {
-      .container {
-        padding: 15px;
-      }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>หญ้าพันธุ์วัวชน - บ้านป่าพะยอม</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <header>
+    <h1>หญ้าพันธุ์วัวชน</h1>
+    <p>โดยชุมชนบ้านป่าพะยอม จังหวัดพัทลุง</p>
+  </header>
+
+  <nav>
+    <a href="#about">เกี่ยวกับ</a>
+    <a href="#products">สินค้า</a>
+    <a href="#contact">ติดต่อเรา</a>
+  </nav>
+
+  <section id="about">
+    <h2>เกี่ยวกับเรา</h2>
+    <p>เราจำหน่ายหญ้าพันธุ์คุณภาพ สำหรับวัวชน วัวพื้นเมือง วัวเนื้อ โดยชาวบ้านในชุมชนบ้านป่าพะยอม จังหวัดพัทลุง ปลูกด้วยวิธีธรรมชาติ ไม่ใช้สารเคมี</p>
+  </section>
+
+  <section id="products">
+    <h2>สินค้าของเรา</h2>
+    <div class="product-list">
+      <div class="product">
+        <img src="hay1.jpg" alt="หญ้าเนเปียร์ปากช่อง">
+        <h3>หญ้าเนเปียร์ปากช่อง</h3>
+        <p>เหมาะสำหรับวัวชนและวัวขุน โปรตีนสูง</p>
+        <p class="price">10 บาท/กิโล</p>
+        <button onclick="order('หญ้าเนเปียร์ปากช่อง')">สั่งซื้อ</button>
+      </div>
+
+      <div class="product">
+        <img src="hay2.jpg" alt="หญ้าแพงโกล่า">
+        <h3>หญ้าแพงโกล่า</h3>
+        <p>ปลูกง่าย โตเร็ว วัวกินดี</p>
+        <p class="price">8 บาท/กิโล</p>
+        <button onclick="order('หญ้าแพงโกล่า')">สั่งซื้อ</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>ติดต่อเรา</h2>
+    <p>โทร: <a href="tel:0812345678">081-234-5678</a></p>
+    <p>Line: @cowgrass</p>
+    <p>Facebook: <a href="#">facebook.com/cowgrassphatthalung</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 บ้านป่าพะยอม จังหวัดพัทลุง</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
